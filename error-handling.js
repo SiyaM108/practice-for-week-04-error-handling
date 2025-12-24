@@ -7,8 +7,12 @@ function sum(array) {
   return sum;
 }
 
-let res = sum(null);
-console.log(res);
+try {
+  let res = sum(null);
+  console.log(res);
+} catch (error) {
+  console.log("Error:", error.message);
+}
 
 // 2.
 // tests
