@@ -16,9 +16,21 @@ try {
 
 // 2.
 // tests
-sayName("Alex");
-sayName(1);
+// sayName("Alex");
+// sayName(1);
 // Your code here
+function sayName(name) {
+  if (typeof name !== "string") {
+    throw new Error("Invalid name: name must be a string");
+  }
+  console.log(name);
+}
+try {
+  sayName("Alex");
+  sayName(1);
+} catch (error) {
+  console.log("Error:", error.message);
+}
 
 // 3.
 function greet(greeting) {
