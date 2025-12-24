@@ -40,3 +40,9 @@ function greet(greeting) {
 
   console.log(greeting);
 }
+
+try {
+  greet();
+} catch (error) {
+  console.log("Error:", error.message);
+}
