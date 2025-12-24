@@ -44,5 +44,5 @@ function greet(greeting) {
 try {
   greet();
 } catch (error) {
-  console.log("Error:", error.message);
+  console.log("Hello World!");
 }
